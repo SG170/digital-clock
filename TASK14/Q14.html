@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Forms Example</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <h2 align="center">Customer Information Form</h2>
+
+    <form>
+
+        <table border="1" cellpadding="5" cellspacing="0" align="center">
+            <tr>
+                <th style="background-color: rgb(228, 184, 255);">Name</th>
+                <th style="background-color:rgb(228, 184, 255) ;"> Value</th>
+            </tr>
+            <tr>
+                <th >Name</th>
+                <td><input type="text" name="name"></td>
+            </tr>
+
+            <tr>
+                <th>Sex</th>
+                <td>
+                    <input type="radio" name="sex"> Male
+                    <input type="radio" name="sex"> Female
+                </td>
+            </tr>
+
+            <tr>
+                <th>Eye Color</th>
+                <td>
+                    <select>
+                        <option>Green</option>
+                        <option>Blue</option>
+                        <option>Brown</option>
+                        <option>Black</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Check all that apply</th>
+                <td>
+                    <input type="checkbox"> Over 6 feet tall <br>
+                    <input type="checkbox"> Over 200 pounds
+                </td>
+            </tr>
+
+            <tr>
+                <th>Describe your athletic ability</th>
+                <td>
+                    <textarea rows="5" cols="30"></textarea>
+                </td>
+            </tr>
+
+            <!-- Telephone with validation -->
+            <tr>
+                <th>Telephone Number</th>
+                <td>
+                    <input type="tel" pattern="[0-9]{10}" placeholder="10-digit number">
+                </td>
+            </tr>
+
+            <!-- Country -->
+            <tr>
+                <th>Country</th>
+                <td>
+                    <select>
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                        <option>Australia</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Profile Photo -->
+            <tr>
+                <th>Profile Photo</th>
+                <td>
+                    <input type="file" accept="image/*">
+                </td>
+            </tr>
+
+            <!-- Age using range -->
+            <tr>
+                <th>Age</th>
+                <td>
+                    <input type="range" min="1" max="100">
+                </td>
+            </tr>
+
+            <!-- Progress bar -->
+            <tr>
+                <th>Form Completion</th>
+                <td>
+                    <progress value="60" max="100"></progress>
+                </td>
+            </tr>
+
+            <!-- Meter -->
+            <tr>
+                <th>Fitness Level</th>
+                <td>
+                    <meter value="0.7"></meter>
+                </td>
+            </tr>
+
+            <!-- Submit -->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Enter my information">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+    <!-- Footer -->
+    <footer align="center">
+        <p>Email: example@gmail.com</p>
+    </footer>
+
+</body>
+</html>

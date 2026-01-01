@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(whale.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.clock {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px 50px;
+    border-radius: 15px;
+    font-size: 60px;
+    color: #ffffff;
+    letter-spacing: 4px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+}
+
